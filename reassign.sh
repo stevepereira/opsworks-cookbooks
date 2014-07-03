@@ -1,7 +1,7 @@
 #change vpc instance public IP address (EIP -> NIC|INSTANCE)
 #usage "changeip [instance friendly tag=Name] [region]"
-#example "changeip my.instnace us-west-1"
-#dafault region is us-west-1 (you must include --region for $region default)
+#example "changeip my.instance us-west-1"
+#dafault region is us-east-1 (you must include --region for $region default)
 #for VPC instances only
 function changeip {
     if [[ -z $1 ]]; then
